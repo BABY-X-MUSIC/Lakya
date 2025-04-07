@@ -13,7 +13,7 @@ from Lyka import app
 from Lyka.core.userbot import assistants
 from Lyka.misc import SUDOERS, mongodb
 from Lyka.plugins import ALL_MODULES
-from Lyka.utils.database import get_served_chats, get_served_users,
+from Lyka.utils.database import get_served_chats, get_served_users
 from Lyka.utils.decorators.language import language, languageCB
 from Lyka.utils.inline.stats import back_stats_buttons, stats_buttons
 from config import BANNED_USERS
