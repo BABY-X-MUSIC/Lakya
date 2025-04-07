@@ -6,8 +6,6 @@ from pyrogram.types import (
     InlineKeyboardButton,
     InlineKeyboardMarkup,
     Message,
-    InputMediaPhoto,
-    InputMediaVideo,
 )
 
 from Lyka import app
@@ -27,6 +25,7 @@ from Lyka.utils.database import (
     skip_off,
     skip_on,
 )
+from Lyka.utils import bot_sys_stats
 from Lyka.utils.decorators.admins import ActualAdminCB
 from Lyka.utils.decorators.language import language, languageCB
 from Lyka.utils.inline.settings import (
@@ -35,8 +34,8 @@ from Lyka.utils.inline.settings import (
     setting_markup,
     vote_mode_markup,
 )
-from Lyka.utils.inline.start import private_panel
-from config import BANNED_USERS, OWNER_ID, START_IMG_URL
+from LevyMusic.utils.inline.start import private_panel
+from config import BANNED_USERS, OWNER_ID
 
 
 @app.on_message(
@@ -50,15 +49,24 @@ async def settings_mar(client, message: Message, _):
         reply_markup=InlineKeyboardMarkup(buttons),
     )
 
-@app.on_callback_query(filters.regex("gib_source") & ~BANNED_USERS)
+
+@app.on_callback_query(filters.regex("settings_helper") & ~BANNED_USERS)
 @languageCB
-async def gib_repo(client, CallbackQuery, _):
-    await CallbackQuery.edit_message_media(
-        InputMediaVideo("https://files.catbox.moe/oi4xfk.mp4"),
-        reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton(text="💌Back💌", callback_data=f"settingsback_helper")]]
+async def settings_cb(client, CallbackQuery, _):
+    try:
+        await CallbackQuery.answer(_["set_cb_5"])
+    except:
+        pass
+    buttons = setting_markup(_)
+    return await CallbackQuery.edit_message_text(
+        _["setting_1"].format(
+            app.mention,
+            CallbackQuery.message.chat.id,
+            CallbackQuery.message.chat.title,
         ),
+        reply_markup=InlineKeyboardMarkup(buttons),
     )
+
 
 @app.on_callback_query(filters.regex("settingsback_helper") & ~BANNED_USERS)
 @languageCB
@@ -71,12 +79,9 @@ async def settings_back_markup(client, CallbackQuery: CallbackQuery, _):
         await app.resolve_peer(OWNER_ID)
         OWNER = OWNER_ID
         buttons = private_panel(_)
-        return await CallbackQuery.edit_message_media(
-            InputMediaPhoto(
-                media=START_IMG_URL,
-                caption=_["start_2"].format(
-                    CallbackQuery.from_user.first_name, app.mention),
-            ),
+        UP, CPU, RAM, DISK = await bot_sys_stats()
+        return await CallbackQuery.edit_message_text(
+            _["start_2"].format(CallbackQuery.from_user.mention, app.mention, UP, DISK, CPU, RAM),
             reply_markup=InlineKeyboardMarkup(buttons),
         )
     else:
