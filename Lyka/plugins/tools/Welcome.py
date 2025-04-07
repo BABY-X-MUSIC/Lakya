@@ -123,22 +123,17 @@ async def greet_group(_, member: ChatMemberUpdated):
             photo=welcomeimg,
             caption=f"""
 
-❣️Welcome In New Group ❣️
-➖➖➖➖➖➖➖➖➖➖➖➖
-🏘{member.chat.title}🥳
+💭 Welcome to {member.chat.title}🥳
 ➖➖➖➖➖➖➖➖➖➖➖➖
 ● Name ➥ {user.mention} 
 ● Username ➥ @{user.username} 
 
 ┏━━━━━━━━━━━━━━━
-┣ 𝟏 ➥ Dont Abusing  👣
-
-┣ 𝟐 ➥ 💗Respect Every Boy Feeling
-
+┣ 𝟏 ➥ Dont Abusing  👣
+┣ 𝟐 ➥ 💗Respect Every One
 ┣ 𝟑 ➥ Link Not Allow 
-
 ┣ 𝟒 ➥ Dont Send Adult Stuff
-┗━━━━━━━━━━━━━━━━━      
+┗━━━━━━━━━━━━━━━━━      
 
 ❖Made By [Gray Bots](https://t.me/GrayBots)
 """,
