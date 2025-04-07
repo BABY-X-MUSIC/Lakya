@@ -21,7 +21,7 @@ async def init():
         and not config.STRING5
     ):
         LOGGER(__name__).error(
-            "𝐒𝐭𝐫𝐢𝐧𝐠 𝐒𝐞𝐬𝐬𝐢𝐨𝐧 𝐍𝐨𝐭 𝐅𝐢𝐥𝐥𝐞𝐝, 𝐏𝐥𝐞𝐚𝐬𝐞 𝐅𝐢𝐥𝐥 𝐀 𝐏𝐲𝐫𝐨𝐠𝐫𝐚𝐦 V2 𝐒𝐞𝐬𝐬𝐢𝐨𝐧🤬"
+            "String session not filled, Please fill a Pyrogram V2 Session 🤬"
         )
 
     await sudo()
@@ -37,15 +37,15 @@ async def init():
     await app.start()
     for all_module in ALL_MODULES:
         importlib.import_module("Lyka.plugins" + all_module)
-    LOGGER("Lyka.plugins").info("𝐀𝐥𝐥 𝐅𝐞𝐚𝐭𝐮𝐫𝐞𝐬 𝐋𝐨𝐚𝐝𝐞𝐝 𝐁𝐚𝐛𝐲🥳...")
+    LOGGER("Lyka.plugins").info("All features loaded baby 🥳...")
     await userbot.start()
     await Lyka.start()
     await Lyka.decorators()
-    LOGGER("Lyka").info("╔═════ஜ۩۞۩ஜ════╗\n  ♨️ 𝐊ʀɪsʜɴᴇᴛᴡᴏʀᴋ ♨️\n╚═════ஜ۩۞۩ஜ════╝")
+    LOGGER("Lyka").info("♨️ GrayBots♨️\n")
     await idle()
     await app.stop()
     await userbot.stop()
-    LOGGER("Lyka").info("╔═════ஜ۩۞۩ஜ════╗\n  ♨️ 𝐊ʀɪsʜɴᴇᴛᴡᴏʀᴋ ♨️\n╚═════ஜ۩۞۩ஜ════╝")
+    LOGGER("Lyka").info("♨️ GrayBots♨️")
 
 
 if __name__ == "__main__":
