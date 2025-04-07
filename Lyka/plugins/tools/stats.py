@@ -13,7 +13,7 @@ from Lyka import app
 from Lyka.core.userbot import assistants
 from Lyka.misc import SUDOERS, mongodb
 from Lyka.plugins import ALL_MODULES
-from Lyka.utils.database import get_served_chats, get_served_users
+from Lyka.utils.database import get_served_chats, get_served_users, get_sudoers
 from Lyka.utils.decorators.language import language, languageCB
 from Lyka.utils.inline.stats import back_stats_buttons, stats_buttons
 from config import BANNED_USERS
@@ -61,7 +61,7 @@ async def overall_stats(client, CallbackQuery, _):
         len(ALL_MODULES),
         len(SUDOERS),
         config.AUTO_LEAVING_ASSISTANT,
-        config.DURATION_LIMIT_MIN, 
+        config.DURATION_LIMIT_MIN,
     )
     med = InputMediaPhoto(media=config.STATS_IMG_URL, caption=text)
     try:
