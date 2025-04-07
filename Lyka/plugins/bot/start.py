@@ -6,10 +6,10 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from youtubesearchpython.__future__ import VideosSearch
 
 import config
-from LevyMusic import app
-from LevyMusic.misc import _boot_
-from LevyMusic.plugins.sudo.sudoers import sudoers_list
-from LevyMusic.utils.database import (
+from Lyka import app
+from Lyka.misc import _boot_
+from Lyka.plugins.sudo.sudoers import sudoers_list
+from Lyka.utils.database import (
     add_served_chat,
     add_served_user,
     blacklisted_chats,
@@ -17,10 +17,10 @@ from LevyMusic.utils.database import (
     is_banned_user,
     is_on_off,
 )
-from LevyMusic.utils import bot_sys_stats
-from LevyMusic.utils.decorators.language import LanguageStart
-from LevyMusic.utils.formatters import get_readable_time
-from LevyMusic.utils.inline import help_pannel, private_panel, start_panel
+from Lyka.utils import bot_sys_stats
+from Lyka.utils.decorators.language import LanguageStart
+from Lyka.utils.formatters import get_readable_time
+from Lyka.utils.inline import help_pannel, private_panel, start_panel
 from config import BANNED_USERS
 from strings import get_string
 
