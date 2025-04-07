@@ -10,8 +10,7 @@ from config import LOGGER_ID
 async def download_instagram_video(client, message):
     if len(message.command) < 2:
         await message.reply_text(
-            "
-            .
+            "Please provide the instagram feel URL after command"
         )
         return
     url = message.text.split()[1]
