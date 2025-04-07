@@ -13,7 +13,7 @@ API_HASH = getenv("API_HASH")
 # Get your token from @BotFather on Telegram.
 BOT_TOKEN = getenv("BOT_TOKEN")
 # -------------------------------------------------------
-OWNER_USERNAME = getenv("OWNER_USERNAME","lx44kk")
+OWNER_USERNAME = getenv("OWNER_USERNAME","nitriic")
 # --------------------------------------------------------
 BOT_USERNAME = getenv("BOT_USERNAME","LykaRobot")
 # --------------------------------------------------------
@@ -90,21 +90,21 @@ confirmer = {}
 
 
 START_IMG_URL = getenv(
-    "START_IMG_URL", "https://files.catbox.moe/fndjks.jpg"
+    "START_IMG_URL", "https://graph.org/file/e244e342204bfe5652cba-7735c97962a8f99d33.jpg"
 )
 PING_IMG_URL = getenv(
-    "PING_IMG_URL", "https://files.catbox.moe/tlgikk.mp4"
+    "PING_IMG_URL", "https://graph.org//file/389a372e8ae039320ca6c.png"
 )
-PLAYLIST_IMG_URL = "https://files.catbox.moe/tlgikk.mp4"
-STATS_IMG_URL = "https://files.catbox.moe/tlgikk.mp4"
-TELEGRAM_AUDIO_URL = "https://files.catbox.moe/enaf5l.jpg"
-TELEGRAM_VIDEO_URL = "https://files.catbox.moe/enaf5l.jpg"
-STREAM_IMG_URL = "https://files.catbox.moe/enaf5l.jpg"
-SOUNCLOUD_IMG_URL = "https://files.catbox.moe/enaf5l.jpg"
-YOUTUBE_IMG_URL = "https://files.catbox.moe/enaf5l.jpg"
-SPOTIFY_ARTIST_IMG_URL = "https://files.catbox.moe/enaf5l.jpg"
-SPOTIFY_ALBUM_IMG_URL = "https://files.catbox.moe/enaf5l.jpg"
-SPOTIFY_PLAYLIST_IMG_URL = "https://files.catbox.moe/enaf5l.jpg"
+PLAYLIST_IMG_URL = "https://graph.org/file/71ba0cd85f4eb6074ea66-8d47131fb9351a0f8e.jpg"
+STATS_IMG_URL = "https://graph.org/file/ae909dfcbfa6a3abc8e79-af02c5ae8a979a3bf4.jpg"
+TELEGRAM_AUDIO_URL = "https://graph.org//file/2f7debf856695e0ef0607.png"
+TELEGRAM_VIDEO_URL = "https://graph.org//file/2f7debf856695e0ef0607.png"
+STREAM_IMG_URL = "https://te.legra.ph/file/bd995b032b6bd263e2cc9.jpg"
+SOUNCLOUD_IMG_URL = "https://te.legra.ph/file/bb0ff85f2dd44070ea519.jpg"
+YOUTUBE_IMG_URL = "https://graph.org//file/2f7debf856695e0ef0607.png"
+SPOTIFY_ARTIST_IMG_URL = "https://te.legra.ph/file/37d163a2f75e0d3b403d6.jpg"
+SPOTIFY_ALBUM_IMG_URL = "https://te.legra.ph/file/37d163a2f75e0d3b403d6.jpg"
+SPOTIFY_PLAYLIST_IMG_URL = "https://te.legra.ph/file/37d163a2f75e0d3b403d6.jpg"
 
 
 def time_to_seconds(time):
