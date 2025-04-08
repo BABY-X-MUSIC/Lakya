@@ -6,7 +6,6 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from youtubesearchpython.__future__ import VideosSearch
 
 import config
-from config import LOGGER_ID as LOG_GROUP_ID
 from Lyka import app
 from Lyka.misc import _boot_
 from Lyka.plugins.sudo.sudoers import sudoers_list
