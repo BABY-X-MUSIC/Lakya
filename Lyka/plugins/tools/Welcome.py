@@ -108,7 +108,7 @@ async def greet_group(_, member: ChatMemberUpdated):
             user.photo.big_file_id, file_name=f"pp{user.id}.png"
         )
     except AttributeError:
-        pic = "AarohiX/assets/upic.png"
+        pic = "Lyka/assets/upic.png"
     if (temp.MELCOW).get(f"welcome-{member.chat.id}") is not None:
         try:
             await temp.MELCOW[f"welcome-{member.chat.id}"].delete()
@@ -130,12 +130,12 @@ async def greet_group(_, member: ChatMemberUpdated):
 
 ┏━━━━━━━━━━━━━━━
 ┣ 𝟏 ➥ Dont Abusing  👣
-┣ 𝟐 ➥ 💗Respect Every One
+┣ 𝟐 ➥ Respect EveryOne 💗
 ┣ 𝟑 ➥ Link Not Allow 
 ┣ 𝟒 ➥ Dont Send Adult Stuff
 ┗━━━━━━━━━━━━━━━━━      
 
-❖Made By [Gray Bots](https://t.me/GrayBots)
+❖Made By [Gray Bots](https://t.me/GrayBots) ⚡
 """,
             reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(f"Add Me Baby", url=f"https://t.me/LykaRobot?startgroup=true")]])
         )
