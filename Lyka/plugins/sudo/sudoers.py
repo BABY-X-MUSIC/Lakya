@@ -53,7 +53,7 @@ async def sudoers_list(client, message: Message):
     keyboard = [[InlineKeyboardButton("๏ View sudolist ๏", callback_data="check_sudo_list")]]
     reply_markups = InlineKeyboardMarkup(keyboard)
     
-    await message.reply_photo(photo="https://graph.org/file/109ba46ee8994b769cc4d-8b6e52b7b5c16e4914.jpg", caption="**» Check sudo list by given below button.**\n\n**» Note:**  Only sudo users can view. ", reply_markup=reply_markups)
+    await message.reply_photo(photo="https://graph.org/file/ce8ca500498dded644e1d-72ca338427ba745165.jpg", caption="**» Check sudo list by given below button.**\n\n**» Note:**  Only sudo users can view. ", reply_markup=reply_markups)
 
 
 @app.on_callback_query(filters.regex("^check_sudo_list$"))
@@ -65,7 +65,7 @@ async def check_sudo_list(client, callback_query: CallbackQuery):
         user = await app.get_users(OWNER_ID)
 
         user_mention = (user.first_name if not user.mention else user.mention)
-        caption = f"**˹ List ofbot moderators˼**\n\n**🌹 Owner** ➥ {user_mention}\n\n"
+        caption = f"**˹ List of bot moderators˼**\n\n**⚡ Owner** ➥ {user_mention}\n\n"
 
         keyboard.append([InlineKeyboardButton("๏ View Member ๏", url=f"tg://openmessage?user_id={OWNER_ID}")])
         
