@@ -3,7 +3,7 @@
   <h2 align="center">
     Ꮮукα Ꭱσвσт
 <p align="center">
-  <img src="https://graph.org/file/e244e342204bfe5652cba-7735c97962a8f99d33.jpg">
+  <img src="https://i.ibb.co/d4wszyLJ/Picsart-25-04-05-15-19-29-899.jpg">
 </p>
 
 <h3 align="center">
