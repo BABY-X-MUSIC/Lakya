@@ -17,7 +17,7 @@ OWNER_USERNAME = getenv("OWNER_USERNAME","nitriic")
 # --------------------------------------------------------
 BOT_USERNAME = getenv("BOT_USERNAME","LykaRobot")
 # --------------------------------------------------------
-BOT_NAME = getenv("BOT_NAME")
+BOT_NAME = getenv("BOT_NAME", "Lyka")
 # ---------------------------------------------------------
 
 
